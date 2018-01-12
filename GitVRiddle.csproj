@@ -215,10 +215,10 @@
       <HintPath>Assets/Libraries/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/tommaso.ceschia/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/andrea.scocchi/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/Users/tommaso.ceschia/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>C:/Users/andrea.scocchi/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -325,6 +325,8 @@
     <Compile Include="Assets\Libraries\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
     <Compile Include="Assets\Libraries\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs" />
     <Compile Include="Assets\Libraries\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+    <Compile Include="Assets\Libraries\LightningBolt\LightningBoltScript.cs" />
+    <Compile Include="Assets\Libraries\Prototype Materials\ShowcaseMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Libraries\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
@@ -344,6 +346,7 @@
     <None Include="Assets\Libraries\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
     <None Include="Assets\Libraries\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
     <None Include="Assets\Libraries\GoogleVR\Shaders\Video\VideoUnlitShader.shader" />
+    <None Include="Assets\Libraries\LightningBolt\Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
