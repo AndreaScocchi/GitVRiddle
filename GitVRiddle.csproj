@@ -325,6 +325,8 @@
     <Compile Include="Assets\Libraries\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
     <Compile Include="Assets\Libraries\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs" />
     <Compile Include="Assets\Libraries\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerRotation.cs" />
     <Compile Include="Assets\Libraries\LightningBolt\LightningBoltScript.cs" />
     <Compile Include="Assets\Libraries\Prototype Materials\ShowcaseMovement.cs" />
   </ItemGroup>
