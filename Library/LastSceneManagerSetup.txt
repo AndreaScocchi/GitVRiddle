@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Tommario.unity
+- path: Assets/Scenes/Tommario2.unity
   isLoaded: 1
   isActive: 1
