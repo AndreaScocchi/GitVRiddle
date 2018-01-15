@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/SbukScene.unity
+=======
+- path: Assets/Scenes/Tommario2.unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1

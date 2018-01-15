@@ -607,7 +607,7 @@ PlayerSettings:
   cloudServicesEnabled:
     UNet: 1
   facebookSdkVersion: 7.9.4
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 3
   cloudProjectId: ac6a231d-8894-4ea3-a80a-0c3759299b65
   projectName: GitVRiddle
   organizationId: ceschia
