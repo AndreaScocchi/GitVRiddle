@@ -1100,7 +1100,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 1751c87899ee6f449b97c8de3b14317b, type: 2}
+  - {fileID: 2100000, guid: c32c9741e6686c145a2c82a233d2a619, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1168,7 +1168,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 1751c87899ee6f449b97c8de3b14317b, type: 2}
+  - {fileID: 2100000, guid: c32c9741e6686c145a2c82a233d2a619, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1579,7 +1579,7 @@ MonoBehaviour:
   raycastMode: 0
   overridePointerCamera: {fileID: 0}
   drawDebugRays: 0
-  maxReticleDistance: 10
+  maxReticleDistance: 1
   reticleSegments: 20
   reticleGrowthSpeed: 8
   reticleSortingOrder: 32767
