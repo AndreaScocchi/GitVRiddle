@@ -233,10 +233,10 @@
       <HintPath>Assets/Libraries/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/andrea.scocchi/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/tommaso.ceschia/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/Users/andrea.scocchi/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>C:/Users/tommaso.ceschia/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -348,6 +348,8 @@
     <Compile Include="Assets\Libraries\torch\scene\script\TorchSlider.cs" />
     <Compile Include="Assets\Libraries\torch\scene\script\Torchslider2.cs" />
     <Compile Include="Assets\Libraries\torch\scripts\Torchelight.cs" />
+    <Compile Include="Assets\Scripts\ActionObjects\Cannon.cs" />
+    <Compile Include="Assets\Scripts\ActionObjects\MicciaScript.cs" />
     <Compile Include="Assets\Scripts\ActionObjects\RotateText.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerRotation.cs" />
     <Compile Include="Assets\Scripts\Player\VRButtonHandle.cs" />
