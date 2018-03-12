@@ -6,13 +6,17 @@ public class PlayerRotation: MonoBehaviour {
     private float XRotation = 0f;
 
     void Update () {
-        if (RotateX) {
+        if (RotateX)
+        {
             XRotation = Camera.main.transform.eulerAngles.x;
-            if (XRotation > 50 && XRotation < 90) {
+            if (XRotation > 50 && XRotation < 90)
+            {
                 XRotation = 50f;
             }
             transform.rotation = Quaternion.Euler(XRotation, Camera.main.transform.eulerAngles.y, 0);
-        } else {
+        }
+        else
+        {
             transform.rotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
         }
     }

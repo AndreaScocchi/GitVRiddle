@@ -5,34 +5,60 @@ using UnityEngine.Events;
 
 public class MicciaScript : MonoBehaviour {
 
-    public UnityEvent Shot;
+    //Variabili pubbliche
+    public GameObject cannon_ball;
+    public GameObject cannon_ball_start_point;
+    public float force = 1000.0f;
     public float TimeToShot = 5.0f;
-    private float realTimeToShot;
-    private bool started = false;
 
-	void Start () {
-        realTimeToShot = TimeToShot;
-	}
-	
-	void Update () {
-		if (started)
+    //Variabili private
+    private bool shooted;
+    private float realTimeToShot;
+    private bool started;
+    private Torchelight torche;
+    
+    void Start () {
+        torche = GetComponent<Torchelight>();
+        resetCannon();
+    }
+
+    //Update -> Gestisce il countdown se partito
+    void Update()
+    {
+        if (started)
         {
             realTimeToShot -= Time.deltaTime;
             if (realTimeToShot < 0)
             {
-                Shot.Invoke();
-                realTimeToShot = TimeToShot;
-                started = false;
-                GetComponent<Torchelight>().StopLight();
+                Shot();
+                resetCannon();
             }
         }
-	}
-
-    public void StartCountdown ()
-    {
-        started = true;
-        GetComponent<Torchelight>().StartLight();
     }
 
+    //Spara la palla di cannone
+    private void Shot()
+    {
+        GameObject cannonball = GameObject.Instantiate(cannon_ball, cannon_ball_start_point.transform);
+        cannonball.GetComponent<Rigidbody>().AddForce(cannon_ball_start_point.transform.forward * force);
+        shooted = true;
+    }
 
+    //Resetta il tutto
+    private void resetCannon()
+    {
+        realTimeToShot = TimeToShot;
+        started = false;
+        torche.StopLight();
+    }
+    
+    //Metodo generale di utilizzo oggetto -> Fa partire il countdown e accende la miccia
+    public void UseObject()
+    {
+        if (started)
+            return;
+
+        started = true;
+        torche.StartLight();
+    }
 }
