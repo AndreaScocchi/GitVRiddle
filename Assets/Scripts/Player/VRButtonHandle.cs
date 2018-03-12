@@ -77,7 +77,7 @@ public class VRButtonHandle : MonoBehaviour
 
     private void UseObject()
     {
-        if (ObjectScript != null && (ObjectScript.getRequiredObject().Equals("") || ObjectScript.getRequiredObject().Equals(RightObject.getObjectName())))
+        if (RightObject != null && (ObjectScript.getRequiredObject().Equals("") || ObjectScript.getRequiredObject().Equals(RightObject.getObjectName())))
         {
             StartCoroutine(UseWithDelay());
         }

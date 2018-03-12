@@ -13363,6 +13363,7 @@ MonoBehaviour:
   MainText: Press to keep
   MainTextObj: {fileID: 1273762515127016}
   InfoTextObj: {fileID: 1585186834922856}
+  DropForce: 4
   Use:
     m_PersistentCalls:
       m_Calls: []
@@ -13489,6 +13490,7 @@ MonoBehaviour:
   MainText: Light me
   MainTextObj: {fileID: 1997730542270502}
   InfoTextObj: {fileID: 1223887697593942}
+  DropForce: 4
   Use:
     m_PersistentCalls:
       m_Calls:
@@ -13569,6 +13571,7 @@ MonoBehaviour:
   MainText: Press to keep
   MainTextObj: {fileID: 1660882361802822}
   InfoTextObj: {fileID: 1977393240785334}
+  DropForce: 4
   Use:
     m_PersistentCalls:
       m_Calls: []
