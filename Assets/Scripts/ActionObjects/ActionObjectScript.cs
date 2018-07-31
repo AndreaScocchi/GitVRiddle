@@ -5,6 +5,13 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+/// <summary>
+/// Per un oggetto iterabile sono richiesti:
+/// - Tag "Action"
+/// - Collider
+/// - Oggetto EventTrigger con OnPointerEnter che punta a this.OnPointerEnter e uguale per OnPointerExit
+/// - Questo script con tutti i dati pubblici popolati
+/// </summary>
 public class ActionObjectScript : MonoBehaviour {
 
     public enum ObjType { Action, TakeObject };

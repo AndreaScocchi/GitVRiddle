@@ -77,34 +77,45 @@ public class VRButtonHandle : MonoBehaviour
 
     private void UseObject()
     {
-        if (RightObject != null && (ObjectScript.getRequiredObject().Equals("") || ObjectScript.getRequiredObject().Equals(RightObject.getObjectName())))
+        //Se non serve nessun oggetto per l'azione
+        if (ObjectScript.getRequiredObject().Equals(""))
         {
-            StartCoroutine(UseWithDelay());
+            ObjectScript.UseObject();
         }
+        //Se serve un oggetto
         else
         {
-            ObjectScript.ShowInfoText();
+            //Se ho in mano l'oggetto giusto -> Lo uso
+            if (ObjectScript.getRequiredObject().Equals((RightObject == null ? "" : RightObject.getObjectName())))
+            {
+                StartCoroutine(UseWithObject());
+            }
+            //Altrimenti mostro il testo per dire che oggetto mi serve
+            else
+            {
+                ObjectScript.ShowInfoText();
+            }
         }
     }
 
     private void TakeObject()
     {
+        //Se non ho niente in mano lo prendo e alzo il braccio
         if (RightObject == null)
         {
             ObjectScript.TakeObject(RightHandObject.transform);
-
-            //Alza il braccio destro di Furiog con animazione
             RightArmAnimator.SetBool("UP", true);
-
             RightObject = ObjectScript;
         }
+        //Altrimenti chiamo la routine temporizzata per droppare il vecchio oggetto e prendere il nuovo
         else
         {
             StartCoroutine(DropWithDelay());
         }
     }
-
-    IEnumerator UseWithDelay()
+    
+    //Routine per effettuare un azione con oggetto e animazione
+    IEnumerator UseWithObject()
     {
         RightArmAnimator.SetBool("USE", true);
         yield return new WaitForSeconds(0.7f);
@@ -117,6 +128,7 @@ public class VRButtonHandle : MonoBehaviour
         RightObject = null;
     }
 
+    //Routine per droppare oggetto con animazione
     IEnumerator DropWithDelay()
     {
         RightObject.DropObject();
