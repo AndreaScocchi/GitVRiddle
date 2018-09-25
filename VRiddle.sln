@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRiddle", "VRiddle.csproj", "{81E3A86B-4BA4-7F8D-54A6-D850B917D62F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRiddle.Editor", "VRiddle.Editor.csproj", "{763D3BC0-1E82-27FB-D616-63D79613B4B4}"
